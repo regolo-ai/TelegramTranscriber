@@ -1,4 +1,5 @@
 # TelegramTranscriber
+[![License](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)   
 
 A Telegram bot that transcribes voice messages using FasterWhipser model.
 
