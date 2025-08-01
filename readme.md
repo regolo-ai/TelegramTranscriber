@@ -3,6 +3,8 @@
 
 A Telegram bot that transcribes voice messages using FasterWhipser model.
 
+<img width="422" height="480" alt="Image" src="https://github.com/user-attachments/assets/a6520069-cfda-474e-9c9a-3f91da42be05" />
+
 ## Features
 
 - ✅ Transcribes Telegram voice messages (OGG/OPUS format)
