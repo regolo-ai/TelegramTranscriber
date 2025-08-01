@@ -17,6 +17,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 TOKEN = os.getenv("TELEGRAM_TOKEN", '')
+MODEL = os.getenv("MODEL", '')
 openai.api_key = os.getenv("HOST_API", '')
 openai.base_url = os.getenv("API_KEY", "")
 
@@ -37,7 +38,7 @@ async def transcribe(update: Update, context: ContextTypes.DEFAULT_TYPE):
     try:
         with open(file_path, "rb") as audio_file:
             transcription = openai.audio.transcriptions.create(
-                model="faster-whisper-large-v3",
+                model=MODEL,
                 file=audio_file,
                 response_format="text"
             )
