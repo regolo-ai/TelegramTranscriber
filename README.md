@@ -52,3 +52,21 @@ Copy the `.env-example` file to `.env` with your keys.
 ```
 python bot.py
 ```
+
+---
+
+## Docker Setup (Alternative)
+
+### 1. Build the Docker image
+
+```bash
+docker build -t telegram-transcriber .
+```
+
+### 2. Run with Docker
+
+```bash
+docker run -d --name telegram-transcriber telegram-transcriber
+```
+
+**Note:** Make sure your `.env` file is properly configured before building the image.
